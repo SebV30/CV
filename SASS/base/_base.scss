@@ -1,0 +1,126 @@
+body {
+    width: 100%;
+    font-size: 14px;
+    font-family: $police-text;
+    margin: 0;
+    background-color: #c0c0c065;
+    & a {
+        color: $primary-font-color;
+    }
+    & a:hover {
+        font-size: 110%;
+        color: $color-primary;
+    }
+    & h1 {
+        margin-top: 25px;
+        font-weight: bold;
+    }
+    & h2 {
+        font-size: 21px;
+    }
+    & .titles {
+        font-weight: bold;
+    }
+    & .coord-photo {
+        @include tablette {
+            display: flex;
+            justify-content: space-around;
+        }
+        @include pc {
+            display: flex;
+            justify-content: space-around;
+        }
+        @include pc-xl {
+            display: flex;
+            justify-content: space-around;
+        }
+        & img {
+            margin: 25px 0;
+            max-height: 200px;
+            object-fit: scale-down;
+        }
+        & #presentation {
+            margin-top: 20px;
+            text-align: center;
+            // border: 1px solid red;
+            // border-radius: 20px;
+            @include tablette {
+                margin-left: 1%;
+                padding: 1%;
+                text-align: left;
+            }
+            @include pc {
+                margin-left: 1%;
+                padding: 1%;
+                text-align: left;
+            }
+            @include pc-xl {
+                margin-left: 1%;
+                padding: 1%;
+                text-align: left;
+            }
+        }
+    }
+    & #categories {
+        margin-top: 50px;
+        @include tablette {
+            display: flex;
+            // flex-direction: column;
+        }
+        @include pc {
+            display: flex;
+            // flex-direction: column;
+        }
+        @include pc-xl {
+            display: flex;
+            // flex-direction: column;
+        }
+        & .separation {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px dotted black;
+        }
+        & .italic {
+            font-style: italic;
+        }
+        & .ctd {
+            margin-top: 0!important;
+            & #techno,
+            #divers {
+                margin: 40px 0;
+                padding: 15px;
+                border: 2px solid rgb(49, 49, 49);
+                border-radius: 20px;
+            }
+            & #comp {
+                margin: 20px 0;
+                padding: 15px;
+                border: 2px solid rgb(49, 49, 49);
+                border-radius: 20px;
+            }
+            & .techno-img {
+                width: 48px;
+                margin: 0 5px;
+            }
+        }
+        & .efcl {
+            & #exp,
+            #form,
+            #logiciels {
+                margin: 20px 0;
+                padding: 15px;
+                border: 2px solid rgb(49, 49, 49);
+                border-radius: 20px;
+            }
+        }
+    }
+    & .deco {
+        border-bottom: 2px solid $color-primary;
+    }
+    & .decoration {
+        border-bottom: 3px solid $color-primary;
+    }
+    & footer {
+        font-size: 16px;
+    }
+}

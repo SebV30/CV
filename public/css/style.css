@@ -1,0 +1,139 @@
+/*  BOUTONS  */
+/*  MEDIA QUERIES  */
+body {
+  width: 100%;
+  font-size: 14px;
+  font-family: "Roboto";
+  margin: 0;
+  background-color: #c0c0c065;
+}
+body a {
+  color: #000000;
+}
+body a:hover {
+  font-size: 110%;
+  color: #9356dc;
+}
+body h1 {
+  margin-top: 25px;
+  font-weight: bold;
+}
+body h2 {
+  font-size: 21px;
+}
+body .titles {
+  font-weight: bold;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .coord-photo {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body .coord-photo {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1920px) {
+  body .coord-photo {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+body .coord-photo img {
+  margin: 25px 0;
+  max-height: 200px;
+  object-fit: scale-down;
+}
+body .coord-photo #presentation {
+  margin-top: 20px;
+  text-align: center;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .coord-photo #presentation {
+    margin-left: 1%;
+    padding: 1%;
+    text-align: left;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body .coord-photo #presentation {
+    margin-left: 1%;
+    padding: 1%;
+    text-align: left;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1920px) {
+  body .coord-photo #presentation {
+    margin-left: 1%;
+    padding: 1%;
+    text-align: left;
+  }
+}
+body #categories {
+  margin-top: 50px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body #categories {
+    display: flex;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body #categories {
+    display: flex;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1920px) {
+  body #categories {
+    display: flex;
+  }
+}
+body #categories .separation {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted black;
+}
+body #categories .italic {
+  font-style: italic;
+}
+body #categories .ctd {
+  margin-top: 0 !important;
+}
+body #categories .ctd #techno,
+body #categories .ctd #divers {
+  margin: 40px 0;
+  padding: 15px;
+  border: 2px solid #313131;
+  border-radius: 20px;
+}
+body #categories .ctd #comp {
+  margin: 20px 0;
+  padding: 15px;
+  border: 2px solid #313131;
+  border-radius: 20px;
+}
+body #categories .ctd .techno-img {
+  width: 48px;
+  margin: 0 5px;
+}
+body #categories .efcl #exp,
+body #categories .efcl #form,
+body #categories .efcl #logiciels {
+  margin: 20px 0;
+  padding: 15px;
+  border: 2px solid #313131;
+  border-radius: 20px;
+}
+body .deco {
+  border-bottom: 2px solid #9356dc;
+}
+body .decoration {
+  border-bottom: 3px solid #9356dc;
+}
+body footer {
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */
