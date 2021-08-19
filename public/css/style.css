@@ -5,7 +5,7 @@ body {
   font-size: 14px;
   font-family: "Roboto";
   margin: 0;
-  background-color: #c0c0c065;
+  background-color: #d3d3d3;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   body {
@@ -29,12 +29,14 @@ body a:hover {
   font-size: 110%;
   color: #9356dc;
 }
+body header {
+  background-color: #353535;
+  color: #ffffff;
+}
 body header h1 {
   padding: 25px 0;
   font-size: 24px;
   font-weight: bold;
-  background-color: #353535;
-  color: #d3d3d3;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   body header h1 {
@@ -51,8 +53,34 @@ body header h1 {
     font-size: 50px;
   }
 }
+body header p {
+  padding: 25px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  body header p {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  body header p {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1920px) {
+  body header p {
+    font-size: 45px;
+  }
+}
 body h2 {
   font-size: 21px;
+}
+body li {
+  list-style-type: none;
+}
+body .coord-photo {
+  color: #000000;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   body .coord-photo {
@@ -120,14 +148,6 @@ body #categories {
     display: flex;
   }
 }
-body #categories .separation {
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px dotted black;
-}
-body #categories .italic {
-  font-style: italic;
-}
 body #categories .ctd {
   margin-top: 0 !important;
 }
@@ -137,12 +157,14 @@ body #categories .ctd #divers {
   padding: 15px;
   border: 2px solid #313131;
   border-radius: 20px;
+  background-color: #ffffff;
 }
 body #categories .ctd #comp {
   margin: 20px 0;
   padding: 15px;
   border: 2px solid #313131;
   border-radius: 20px;
+  background-color: #ffffff;
 }
 body #categories .ctd .techno-img {
   width: 48px;
@@ -151,17 +173,74 @@ body #categories .ctd .techno-img {
 body #categories .ctd h2 {
   padding-bottom: 10px;
 }
+body #categories .ctd .comp-web {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+body #categories .ctd .comp-web .greenstar {
+  color: #37c737 !important;
+  margin: 0 2px;
+  font-size: 110%;
+}
+body #categories .ctd .comp-web .redstar {
+  color: #b41f1f !important;
+  margin: 0 2px;
+  font-size: 110%;
+}
+body #categories .efcl {
+  margin-top: 0 !important;
+}
 body #categories .efcl #exp,
 body #categories .efcl #form,
 body #categories .efcl #logiciels {
   margin: 20px 0;
   padding: 15px;
+  background-color: #ffffff;
   border: 2px solid #313131;
   border-radius: 20px;
+}
+body #categories .efcl .separation {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted black;
+}
+body #categories .efcl .italic {
+  font-style: italic;
+  font-weight: bold;
+  border: 1px solid #9356dc;
+  border-radius: 10px;
+  padding: 2px 8px;
+  background-color: #ffffff;
 }
 body #categories .efcl .titles {
   font-weight: bold;
   padding-bottom: 10px;
+}
+body #categories .efcl .experience {
+  padding: 5px 5px !important;
+  margin: 10px 0;
+  background-color: #d3d3d3;
+  border: 2px #9356dc solid;
+  border-radius: 15px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  body #categories .efcl .experience {
+    padding: 10px 10px !important;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  body #categories .efcl .experience {
+    padding: 15px 15px !important;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1920px) {
+  body #categories .efcl .experience {
+    padding: 20px 20px !important;
+  }
+}
+body #categories .efcl .experience p {
+  margin: 0;
 }
 body .deco {
   border-bottom: 2px solid #9356dc;
@@ -192,6 +271,12 @@ body footer {
 }
 body footer a {
   color: #d3d3d3;
+}
+body .boldital {
+  font-size: 110%;
+  font-style: italic;
+  font-weight: bold;
+  border-bottom: 3px double #99e2d0;
 }
 
 /*# sourceMappingURL=style.css.map */

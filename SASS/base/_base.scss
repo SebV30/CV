@@ -3,7 +3,7 @@ body {
     font-size: 14px;
     font-family: $police-text;
     margin: 0;
-    background-color: #c0c0c065;
+    background-color: $shadow;
     @include tablette {
         font-size: 16px;
     }
@@ -21,12 +21,12 @@ body {
         color: $color-primary;
     }
     & header {
+        background-color: $footer;
+        color: $secondary-font-color;
         & h1 {
             padding: 25px 0;
             font-size: 24px;
             font-weight: bold;
-            background-color: $footer;
-            color: $shadow;
             @include tablette {
                 font-size: 35px;
             }
@@ -37,11 +37,29 @@ body {
                 font-size: 50px;
             }
         }
+        & p {
+            padding: 25px 0;
+            font-size: 20px;
+            font-weight: bold;
+            @include tablette {
+                font-size: 30px;
+            }
+            @include pc {
+                font-size: 40px;
+            }
+            @include pc-xl {
+                font-size: 45px;
+            }
+        }
     }
     & h2 {
         font-size: 21px;
     }
+    & li {
+        list-style-type: none;
+    }
     & .coord-photo {
+        color: $primary-font-color;
         @include tablette {
             display: flex;
             justify-content: space-around;
@@ -85,23 +103,12 @@ body {
         margin-top: 50px;
         @include tablette {
             display: flex;
-            // flex-direction: column;
         }
         @include pc {
             display: flex;
-            // flex-direction: column;
         }
         @include pc-xl {
             display: flex;
-            // flex-direction: column;
-        }
-        & .separation {
-            margin-bottom: 10px;
-            padding-bottom: 10px;
-            border-bottom: 1px dotted black;
-        }
-        & .italic {
-            font-style: italic;
         }
         & .ctd {
             margin-top: 0!important;
@@ -111,12 +118,14 @@ body {
                 padding: 15px;
                 border: 2px solid rgb(49, 49, 49);
                 border-radius: 20px;
+                background-color: $secondary-font-color;
             }
             & #comp {
                 margin: 20px 0;
                 padding: 15px;
                 border: 2px solid rgb(49, 49, 49);
                 border-radius: 20px;
+                background-color: $secondary-font-color;
             }
             & .techno-img {
                 width: 48px;
@@ -125,19 +134,68 @@ body {
             & h2 {
                 padding-bottom: 10px;
             }
+            & .comp-web {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 20px;
+                & .greenstar {
+                    color: $greenstar!important;
+                    margin: 0 2px;
+                    font-size: 110%;
+                }
+                & .redstar {
+                    color: $redstar!important;
+                    margin: 0 2px;
+                    font-size: 110%;
+                }
+            }
         }
         & .efcl {
+            margin-top: 0!important;
             & #exp,
             #form,
             #logiciels {
                 margin: 20px 0;
                 padding: 15px;
+                background-color: $secondary-font-color;
                 border: 2px solid rgb(49, 49, 49);
                 border-radius: 20px;
+            }
+            & .separation {
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                border-bottom: 1px dotted black;
+            }
+            & .italic {
+                font-style: italic;
+                font-weight: bold;
+                border: 1px solid $color-primary;
+                border-radius: 10px;
+                padding: 2px 8px;
+                background-color: $secondary-font-color;
             }
             & .titles {
                 font-weight: bold;
                 padding-bottom: 10px;
+            }
+            & .experience {
+                padding: 5px 5px!important;
+                margin: 10px 0;
+                background-color: $shadow;
+                border: 2px $color-primary solid;
+                border-radius: 15px;
+                @include tablette {
+                    padding: 10px 10px!important;
+                }
+                @include pc {
+                    padding: 15px 15px!important;
+                }
+                @include pc-xl {
+                    padding: 20px 20px!important;
+                }
+                & p {
+                    margin: 0;
+                }
             }
         }
     }
@@ -164,5 +222,11 @@ body {
         & a {
             color: $shadow;
         }
+    }
+    & .boldital {
+        font-size: 110%;
+        font-style: italic;
+        font-weight: bold;
+        border-bottom: 3px double $color-secondary;
     }
 }
