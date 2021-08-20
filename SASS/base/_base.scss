@@ -37,8 +37,8 @@ body {
                 font-size: 50px;
             }
         }
-        & p {
-            padding: 25px 0;
+        & h2 {
+            padding-bottom: 25px;
             font-size: 20px;
             font-weight: bold;
             @include tablette {

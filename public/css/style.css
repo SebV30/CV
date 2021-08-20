@@ -53,23 +53,23 @@ body header h1 {
     font-size: 50px;
   }
 }
-body header p {
-  padding: 25px 0;
+body header h2 {
+  padding-bottom: 25px;
   font-size: 20px;
   font-weight: bold;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  body header p {
+  body header h2 {
     font-size: 30px;
   }
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
-  body header p {
+  body header h2 {
     font-size: 40px;
   }
 }
 @media (min-width: 1440px) and (max-width: 1920px) {
-  body header p {
+  body header h2 {
     font-size: 45px;
   }
 }
